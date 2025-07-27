@@ -1,0 +1,184 @@
+%-------------------------
+% Resume in Latex
+% Author : Praful Waghe
+%-------------------------
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+\usepackage{ragged2e}
+\usepackage{blindtext}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.6in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{{#1 \vspace{-4pt}}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]} 
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}} 
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in]} 
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-1pt}} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+    {\huge \color{MidnightBlue}{\textbf{Praful Waghe}}} \\ \vspace{3pt}
+    \small \raisebox{-0.1\height}\faPhone\ +91-9691097898 ~ \href{mailto:prafulwaghe100@gmail.com}{\raisebox{-0.1\height}\faEnvelope\ ~prafulwaghe100@gmail.com} ~ 
+    \href{https://www.linkedin.com/in/prafulwaghe024/}{\raisebox{-0.1\height}\faLinkedin\ ~\underline{Linkedin}}  ~
+    \href{https://github.com/radhekarna}{\raisebox{-0.1\height}\faGithub\ ~\underline{Github}}
+    \vspace{-5pt}
+
+
+%-----------Profile-----------
+\section{Profile}
+Passionate about automation, workflow optimization, and efficient software deployment. A quick learner, eager to explore new technologies and solve complex challenges. Seeking and organization to enhance my skills and problem solving abilities\\ 
+
+%-----------Skills-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in]
+    \item \textbf{Languages:} C++, Python
+    \item \textbf{Version Control:} Git , Bitbucket
+    \item \textbf{CI/CD Tools:} Jenkins, Github Actions, Argo CD
+    \item \textbf{Monitoring:} Prometheus, Grafana, Kibana, Fluentd, Logstash, Metricbeat
+    \item \textbf{Operating Systems:} Linux, Windows
+    \item \textbf{Scripting:} Bash, YAML, JSON
+    \item \textbf{Build Tools:} Maven, Gradle
+    \item \textbf{Containerization:} Docker
+    \item \textbf{Orchestration:} Kubernetes
+    \item \textbf{IaC:} Terraform, Ansible
+    \item \textbf{Cloud:} AWS   
+\end{itemize}
+
+%-----------Experience-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Yes Bank Ltd.}{Nov 2024 -- Present}
+{DevOps Engineer and Manager}{Bangalore}
+\resumeItemListStart
+    \resumeItem{Upgraded Bitbucket Application across all tiers with rollback safety measures.}
+    \resumeItem{Managed infrastructure requirements, server migration from Azure to on-premises.}
+    \resumeItem{System patching \& automated repetitive server patching tasks to improve efficiency}    
+\resumeItemListEnd
+
+\resumeSubheading
+{Xebia IT Architects India Pvt Ltd}{2021 -- Present}
+{DevOps Consultant}{Gurugram}
+\resumeItemListStart
+    \resumeItem{Implemented Jenkins shared libraries to reduce redundant pipelines.}
+    \resumeItem{Deployed and managed ArgoCD with Helm on Kubernetes.}
+    \resumeItem{Led production support, releases, hotfixes, and platform tool setup.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Xebia IT Architects India Pvt Ltd}{}
+{Junior DevOps Consultant}{}
+\resumeItemListStart
+    \resumeItem{Automated deployments with GitHub, Jenkins, GitLab \& deployed Fluentd Helm charts.}
+    \resumeItem{Integrated Logstash with Elasticsearch, built Jenkins KPI dashboard in Kibana.}
+    \resumeItem{Led releases for the multiple projects \& handled certificate renewals activity.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Xebia IT Architects India Pvt Ltd}{}
+{Technical Trainee}{}
+\resumeItemListStart
+    \resumeItem{Worked with Microservices, REST APIs, Maven, Jenkins, Linux, SDLC.}
+    \resumeItem{Managed Jenkins CI/CD deployments, live issue resolutions and DevOps documentation.}
+\resumeItemListEnd    
+\resumeSubHeadingListEnd
+
+
+
+%-----------Project-----------
+
+\section{Project}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Automated Patching Framework}{April 2025}
+{Ansible  }{}
+\resumeItemListStart
+    \resumeItem{Automated Linux patching for Jenkins/Bitbucket servers using ansible playbooks \& performed health check.}    
+\resumeItemListEnd
+
+\resumeSubheading
+{Chemical Formula and Equation Extraction}{Aug 2020}
+{Python, PyPDF2, PubChemPy }{}
+\resumeItemListStart
+
+    \resumeItem{An advanced automation tool for extracting chemical formulas and equations from PDF Files, increasing efficiency by 100\% and eliminating manual extraction efforts.}  
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+%-----------Education-----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{National Institute of Technology, Tiruchirappalli}{Jul 2018 -- Jul 2021}
+{Master of Computer Applications, CGPA: 8.53}{Tiruchirappalli, India}
+\resumeSubHeadingListEnd
+
+%-----------Achievements-----------
+\section{Achievements}
+\begin{itemize}[leftmargin=0.15in]
+    \item AIR 109 (NIMCET'18)
+    \item Gem Award
+    \item DBMS Elite Certificate - IIT Kharagpur
+    \item Python Certified - Internshala
+\end{itemize}
+
+\end{document}
